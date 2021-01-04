@@ -1,0 +1,2 @@
+(this["webpackJsonprainbowtype-landing"]=this["webpackJsonprainbowtype-landing"]||[]).push([[7],{137:function(a,i,n){"use strict";n.r(i),i.default=n.p+"static/media/Terms.54426ae0.md"}}]);
+//# sourceMappingURL=7.339b6ffa.chunk.js.map
