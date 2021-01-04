@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <React.Fragment>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/demoaws">
             <Demoaws />
