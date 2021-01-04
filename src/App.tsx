@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './pages/Home'
+import Demo from './pages/Demo'
+import Demoterm from './pages/Demoterm'
+import Democam from './pages/Democam'
+import Demoaws from './pages/Demoaws'
+import Getstarted from './pages/Getstarted'
+import Terms from './pages/Terms'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <Router>
+        <Switch>
+          <Route path="/demoaws">
+            <Demoaws />
+          </Route>
+          <Route path="/democam">
+            <Democam />
+          </Route>
+          <Route path="/demoterm">
+            <Demoterm />
+          </Route>
+          <Route path="/demo">
+            <Demo />
+          </Route>
+          <Route path="/getstarted">
+            <Getstarted />
+          </Route>
+          <Route path="/terms">
+            <Terms />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default App
