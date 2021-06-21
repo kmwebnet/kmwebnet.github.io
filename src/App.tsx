@@ -6,7 +6,7 @@ import Democam from './pages/Democam'
 import Demoaws from './pages/Demoaws'
 import Getstarted from './pages/Getstarted'
 import Terms from './pages/Terms'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
